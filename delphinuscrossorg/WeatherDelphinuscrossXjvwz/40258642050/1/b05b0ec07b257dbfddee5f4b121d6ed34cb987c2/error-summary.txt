@@ -1,0 +1,1 @@
+/Users/runner/work/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz.xcodeproj: error: Provisioning profile "appstore-com.yrtq.whjl.xtsk-20261026022112985" doesn't include the com.apple.developer.weatherkit entitlement. (in target 'WeatherDelphinuscrossXjvwz' from project 'WeatherDelphinuscrossXjvwz')

@@ -1,0 +1,62 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild archive -workspace /Users/runner/work/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz.xcworkspace -scheme WeatherDelphinuscrossXjvwz -configuration Release -destination generic/platform=iOS -skipMacroValidation -skipPackagePluginValidation -archivePath /Users/runner/work/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz/build.xcarchive
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (5 targets)
+    Target 'WeatherDelphinuscrossXjvwz' in project 'WeatherDelphinuscrossXjvwz'
+        ➜ Implicit dependency on target 'Pods-WeatherDelphinuscrossXjvwz' in project 'Pods' via file 'Pods_WeatherDelphinuscrossXjvwz.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'AppSubscriptionKit' in project 'Pods' via options '-framework AppSubscriptionKit' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-WeatherDelphinuscrossXjvwz' in project 'Pods'
+        ➜ Explicit dependency on target 'AppSubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'AppSubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMDevice' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/momc --dry-run --action generate --swift-version 5.9 --sdkroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk --iphoneos-deployment-target 16.0 --module WeatherDelphinuscrossXjvwz /Users/runner/work/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz/Sources/ManagedModel/WeatherDelphinuscrossXjvwz.xcdatamodeld /Users/runner/Library/Developer/Xcode/DerivedData/WeatherDelphinuscrossXjvwz-gudutbwjjmeygmhedthbjkivgvjv/Build/Intermediates.noindex/ArchiveIntermediates/WeatherDelphinuscrossXjvwz/IntermediateBuildFilesPath/WeatherDelphinuscrossXjvwz.build/Release-iphoneos/WeatherDelphinuscrossXjvwz.build/DerivedSources/CoreDataGenerated/WeatherDelphinuscrossXjvwz
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz/Sources/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 78f7f8644196973f78482128dd08e650
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/WeatherDelphinuscrossXjvwz-gudutbwjjmeygmhedthbjkivgvjv/Build/Intermediates.noindex/ArchiveIntermediates/WeatherDelphinuscrossXjvwz/IntermediateBuildFilesPath/XCBuildData/78f7f8644196973f78482128dd08e650.xcbuilddata
+/Users/runner/work/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz.xcodeproj: error: Provisioning profile "appstore-com.yrtq.whjl.xtsk-20261026022112985" doesn't include the WeatherKit capability. (in target 'WeatherDelphinuscrossXjvwz' from project 'WeatherDelphinuscrossXjvwz')
+/Users/runner/work/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz.xcodeproj: error: Provisioning profile "appstore-com.yrtq.whjl.xtsk-20261026022112985" doesn't include the com.apple.developer.weatherkit entitlement. (in target 'WeatherDelphinuscrossXjvwz' from project 'WeatherDelphinuscrossXjvwz')
+** ARCHIVE FAILED **
+
+
+The following build commands failed:
+	Archiving workspace WeatherDelphinuscrossXjvwz with scheme WeatherDelphinuscrossXjvwz
+(1 failure)

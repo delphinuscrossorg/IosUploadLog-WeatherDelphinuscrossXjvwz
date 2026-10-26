@@ -1,0 +1,13 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild -list -workspace /Users/runner/work/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz/WeatherDelphinuscrossXjvwz.xcworkspace
+
+Information about workspace "WeatherDelphinuscrossXjvwz":
+    Schemes:
+        AppSubscriptionKit
+        Pods-WeatherDelphinuscrossXjvwz
+        Pods-WeatherDelphinuscrossXjvwz_Test
+        UMCommon
+        UMDevice
+        WeatherDelphinuscrossXjvwz
+        WeatherDelphinuscrossXjvwz_Test
+
